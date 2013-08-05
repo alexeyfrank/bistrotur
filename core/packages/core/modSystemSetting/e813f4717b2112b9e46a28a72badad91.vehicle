@@ -1,0 +1,12 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'e24f48e0dcbe5af7eeca88dbb308b60b',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'e813f4717b2112b9e46a28a72badad91',
+  'native_key' => 'phpthumb_document_root',
+  'object' => '{"key":"phpthumb_document_root","value":"","xtype":"textfield","namespace":"core","area":"phpthumb","editedon":null}',
+);

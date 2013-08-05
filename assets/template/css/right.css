@@ -1,0 +1,60 @@
+.right-container .header {
+  height: 600px;
+  background: url('/assets/template/images/header-bg.jpg');
+}
+
+.top-menu nav {
+  width: 640px;
+  height: 60px;
+  margin-left: 20px;
+}
+
+.top-menu nav .brand {
+  width: 31px;
+  height: 28px;
+  background: url('/assets/template/images/home.png') 0 0 no-repeat;
+  margin-top: 15px;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 5px;
+  display:block;
+}
+
+.top-menu nav .navbar .nav>li>a {
+  padding: 20px 20px;
+  font-size: 16px;
+  background: white;
+  box-shadow: none;
+}
+.top-menu nav .navbar .nav>li>a.active,
+.top-menu nav .navbar .nav>li>a:hover {
+  color: white;
+  text-shadow: none;
+  background-color: #fd9527;
+  padding: 20px 20px 32px;
+}
+.top-menu nav .navbar-inner {
+  height: 60px;
+}
+
+.top-menu nav .navbar-inner {
+  border-radius: 0;
+  background: white;
+}
+
+.social-links {
+  width: 130px;
+  margin-top: 10px;
+  margin-right: 135px;
+  float: right;
+}
+
+.social-links a {
+  width: 38px;
+  height:38px;
+  display:inline-block;
+}
+
+.social-links a.vk-btn { background: url('/assets/template/images/vk.png'); }
+.social-links a.fb-btn { background: url('/assets/template/images/fb.png'); }
+.social-links a.mail-btn { background: url('/assets/template/images/email.png'); }

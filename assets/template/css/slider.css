@@ -1,0 +1,28 @@
+.slider {
+  margin-top: 85px;
+  position:relative;
+}
+
+.slide {
+  width: 822px;
+  height: 400px;
+}
+
+.owl-pagination {
+  position:absolute;
+  top: -12px; 
+  left: 630px;
+}
+
+.slider .slide .details {
+  display:block;
+  height: 35px;
+  width: 160px;
+  margin-top: -26px;
+  background: #fd9527;
+  color: #ffffff;
+  margin-left: 140px;
+  text-align: center;
+  line-height: 35px;
+  z-index: 1000;
+}

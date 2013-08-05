@@ -1,0 +1,234 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      '224d988b5c1a6bffa880e2e98237a1b1' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"name":"tpl.Breadcrumb.container","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<ul class=\\"breadcrumb\\">\\r\\n\\t<li>&nbsp;<\\/li>\\r\\n\\t[[+crumbs]]\\r\\n<\\/ul>","locked":0,"properties":null,"static":0,"static_file":"","content":"<ul class=\\"breadcrumb\\">\\r\\n\\t<li>&nbsp;<\\/li>\\r\\n\\t[[+crumbs]]\\r\\n<\\/ul>"}',
+        'guid' => '83d4ddaf3ca1c44c0c6bee80f7ad6bf4',
+        'native_key' => 0,
+        'signature' => 'bc208f4f3f96cc0615282bb8a97fa780',
+      ),
+      'ab49b6a245756df85aafc1a299c41d81' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"name":"tpl.Breadcrumb.row","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<li><a href=\\"[[+link]]\\">[[+menutitle:default=`[[+pagetitle]]`]]<\\/a><span class=\\"divider\\">\\/<\\/span><\\/li>\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"<li><a href=\\"[[+link]]\\">[[+menutitle:default=`[[+pagetitle]]`]]<\\/a><span class=\\"divider\\">\\/<\\/span><\\/li>\\n"}',
+        'guid' => 'eef269adc044605bd203bf46639e3d6f',
+        'native_key' => 0,
+        'signature' => '93956137227407ee913f132a0f76aba4',
+      ),
+      '536465e112d18a010af53a39769d4a93' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"name":"Breadcrumb","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"[[BreadCrumb?\\r\\n\\t&containerTpl=`tpl.Breadcrumb.container`\\r\\n\\t&linkCrumbTpl=`tpl.Breadcrumb.row`\\r\\n\\t&showHomeCrumb=`1`\\r\\n]]\\r\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"[[BreadCrumb?\\r\\n\\t&containerTpl=`tpl.Breadcrumb.container`\\r\\n\\t&linkCrumbTpl=`tpl.Breadcrumb.row`\\r\\n\\t&showHomeCrumb=`1`\\r\\n]]\\r\\n"}',
+        'guid' => '3a44abe7b0fc6c3e9ef24d01c16033b0',
+        'native_key' => 0,
+        'signature' => '027aa3b7cb59a69ccfa96c358e7e3759',
+      ),
+      'd380ebaee9d7748b20174af2981ad09b' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"name":"Content","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<div id=\\"content\\" class=\\"main\\">\\r\\n\\t[[*id:isnot=`[[++site_start]]`:then=`<h1>[[*longtitle:default=`[[*pagetitle]]`]]<\\/h1>`]]\\r\\n\\t[[*content]]\\r\\n<\\/div>\\r\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"<div id=\\"content\\" class=\\"main\\">\\r\\n\\t[[*id:isnot=`[[++site_start]]`:then=`<h1>[[*longtitle:default=`[[*pagetitle]]`]]<\\/h1>`]]\\r\\n\\t[[*content]]\\r\\n<\\/div>\\r\\n"}',
+        'guid' => '5c2730ce305acfcd5b4f2afdd8c33862',
+        'native_key' => 0,
+        'signature' => 'b3f6df8646e045fcb6d7cf60e5cdd769',
+      ),
+      '161c27ff05fb33a9c6337c13b682f0f1' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"name":"Footer","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<footer>\\r\\n\\t<div class=\\"row\\">\\r\\n\\t\\t<div class=\\"span6\\">\\r\\n\\t\\t\\t<p>&copy;2012 [[++site_name]]<\\/p>\\r\\n\\t\\t\\t<p><small>render time: [^t^]<\\/small><\\/p>\\r\\n\\t\\t<\\/div>\\r\\n\\t\\t<div class=\\"span6\\">\\r\\n\\t\\t\\t<a href=\\"http:\\/\\/bezumkin.ru\\" class=\\"pull-right\\">[[++cultureKey:is=`ru`:then=`\\u0412\\u0430\\u0441\\u0438\\u043b\\u0438\\u0439 \\u041d\\u0430\\u0443\\u043c\\u043a\\u0438\\u043d`:else=`Vasiliy Naumkin`]]<\\/a>\\r\\n\\t\\t<\\/div>\\r\\n\\t<\\/div>\\r\\n<\\/footer>\\r\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"<footer>\\r\\n\\t<div class=\\"row\\">\\r\\n\\t\\t<div class=\\"span6\\">\\r\\n\\t\\t\\t<p>&copy;2012 [[++site_name]]<\\/p>\\r\\n\\t\\t\\t<p><small>render time: [^t^]<\\/small><\\/p>\\r\\n\\t\\t<\\/div>\\r\\n\\t\\t<div class=\\"span6\\">\\r\\n\\t\\t\\t<a href=\\"http:\\/\\/bezumkin.ru\\" class=\\"pull-right\\">[[++cultureKey:is=`ru`:then=`\\u0412\\u0430\\u0441\\u0438\\u043b\\u0438\\u0439 \\u041d\\u0430\\u0443\\u043c\\u043a\\u0438\\u043d`:else=`Vasiliy Naumkin`]]<\\/a>\\r\\n\\t\\t<\\/div>\\r\\n\\t<\\/div>\\r\\n<\\/footer>\\r\\n"}',
+        'guid' => '70ebcf11e772be8d8a005e3ec668ec2c',
+        'native_key' => 0,
+        'signature' => '4a2e798dc6def6d0e18950f764290ce9',
+      ),
+      '45955d25b332a456d033f083fd2e0174' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"name":"Head","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<base href=\\"[[++site_url]]\\" \\/>\\r\\n<title>[[*longtitle:default=`[[*pagetitle]]`]] - [[++site_name]]<\\/title>\\r\\n<meta charset=\\"[[++modx_charset]]\\" \\/>\\r\\n\\r\\n<script src=\\"https:\\/\\/ajax.googleapis.com\\/ajax\\/libs\\/jquery\\/1.8.3\\/jquery.min.js\\" type=\\"text\\/javascript\\"><\\/script>\\r\\n<script src=\\"[[++assets_url]]components\\/themebootstrap\\/js\\/bootstrap.min.js\\" type=\\"text\\/javascript\\"><\\/script>\\r\\n<script src=\\"[[++assets_url]]components\\/themebootstrap\\/js\\/main.js\\" type=\\"text\\/javascript\\"><\\/script>\\r\\n\\r\\n<!-- Here you can change your default template: just add the name of the folder where others template are,\\r\\nfor example: href=\\"[[++assets_url]]components\\/themebootstrap\\/css\\/cerulean\\/bootstrap.min.css\\" - cerulean template. -->\\r\\n<link href=\\"[[++assets_url]]components\\/themebootstrap\\/css\\/bootstrap.min.css\\" rel=\\"stylesheet\\">\\r\\n<link href=\\"[[++assets_url]]components\\/themebootstrap\\/css\\/main.css\\" rel=\\"stylesheet\\">\\r\\n<link href=\\"[[++assets_url]]components\\/themebootstrap\\/css\\/bootstrap-responsive.min.css\\" rel=\\"stylesheet\\">\\r\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"<base href=\\"[[++site_url]]\\" \\/>\\r\\n<title>[[*longtitle:default=`[[*pagetitle]]`]] - [[++site_name]]<\\/title>\\r\\n<meta charset=\\"[[++modx_charset]]\\" \\/>\\r\\n\\r\\n<script src=\\"https:\\/\\/ajax.googleapis.com\\/ajax\\/libs\\/jquery\\/1.8.3\\/jquery.min.js\\" type=\\"text\\/javascript\\"><\\/script>\\r\\n<script src=\\"[[++assets_url]]components\\/themebootstrap\\/js\\/bootstrap.min.js\\" type=\\"text\\/javascript\\"><\\/script>\\r\\n<script src=\\"[[++assets_url]]components\\/themebootstrap\\/js\\/main.js\\" type=\\"text\\/javascript\\"><\\/script>\\r\\n\\r\\n<!-- Here you can change your default template: just add the name of the folder where others template are,\\r\\nfor example: href=\\"[[++assets_url]]components\\/themebootstrap\\/css\\/cerulean\\/bootstrap.min.css\\" - cerulean template. -->\\r\\n<link href=\\"[[++assets_url]]components\\/themebootstrap\\/css\\/bootstrap.min.css\\" rel=\\"stylesheet\\">\\r\\n<link href=\\"[[++assets_url]]components\\/themebootstrap\\/css\\/main.css\\" rel=\\"stylesheet\\">\\r\\n<link href=\\"[[++assets_url]]components\\/themebootstrap\\/css\\/bootstrap-responsive.min.css\\" rel=\\"stylesheet\\">\\r\\n"}',
+        'guid' => 'af12247394a6c416ffa37cede7aa40ab',
+        'native_key' => 0,
+        'signature' => '90ec54b418b9ea8d5b42178a80cc0bef',
+      ),
+      'd081b07b2291e263a95de0c9bf7a1d37' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"name":"Navbar","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<div class=\\"navbar navbar-fixed-top\\">\\r\\n\\t<div class=\\"navbar-inner\\">\\r\\n\\t\\t<div class=\\"container\\">\\r\\n\\t\\t\\t<a class=\\"btn btn-navbar\\" data-toggle=\\"collapse\\" data-target=\\".nav-collapse\\">\\r\\n\\t\\t\\t\\t<span class=\\"icon-bar\\"><\\/span>\\r\\n\\t\\t\\t\\t<span class=\\"icon-bar\\"><\\/span>\\r\\n\\t\\t\\t\\t<span class=\\"icon-bar\\"><\\/span>\\r\\n\\t\\t\\t<\\/a>\\r\\n\\t\\t\\t<a class=\\"brand\\" href=\\"\\/\\">[[++site_name]]<\\/a>\\r\\n\\t\\t\\t<div class=\\"nav-collapse\\">\\r\\n\\t\\t\\t\\t<ul class=\\"nav\\">\\r\\n\\t\\t\\t\\t\\t[[Wayfinder?\\r\\n\\t\\t\\t\\t\\t\\t&startId=`0`\\r\\n\\t\\t\\t\\t\\t\\t&level=`2`\\r\\n\\t\\t\\t\\t\\t\\t&outerTpl=`tpl.Wayfinder.outer`\\r\\n\\t\\t\\t\\t\\t\\t&parentRowTpl=`tpl.Wayfinder.row.parent`\\r\\n\\t\\t\\t\\t\\t\\t&innerRowTpl=`tpl.Wayfinder.row.inner`\\r\\n\\t\\t\\t\\t\\t\\t&rowTpl=`tpl.Wayfinder.row`                    \\r\\n\\t\\t\\t\\t\\t]]\\r\\n\\t\\t\\t\\t<\\/ul>\\r\\n\\t\\t\\t<\\/div>\\r\\n\\t\\t<\\/div>\\r\\n\\t<\\/div>\\r\\n<\\/div>\\r\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"<div class=\\"navbar navbar-fixed-top\\">\\r\\n\\t<div class=\\"navbar-inner\\">\\r\\n\\t\\t<div class=\\"container\\">\\r\\n\\t\\t\\t<a class=\\"btn btn-navbar\\" data-toggle=\\"collapse\\" data-target=\\".nav-collapse\\">\\r\\n\\t\\t\\t\\t<span class=\\"icon-bar\\"><\\/span>\\r\\n\\t\\t\\t\\t<span class=\\"icon-bar\\"><\\/span>\\r\\n\\t\\t\\t\\t<span class=\\"icon-bar\\"><\\/span>\\r\\n\\t\\t\\t<\\/a>\\r\\n\\t\\t\\t<a class=\\"brand\\" href=\\"\\/\\">[[++site_name]]<\\/a>\\r\\n\\t\\t\\t<div class=\\"nav-collapse\\">\\r\\n\\t\\t\\t\\t<ul class=\\"nav\\">\\r\\n\\t\\t\\t\\t\\t[[Wayfinder?\\r\\n\\t\\t\\t\\t\\t\\t&startId=`0`\\r\\n\\t\\t\\t\\t\\t\\t&level=`2`\\r\\n\\t\\t\\t\\t\\t\\t&outerTpl=`tpl.Wayfinder.outer`\\r\\n\\t\\t\\t\\t\\t\\t&parentRowTpl=`tpl.Wayfinder.row.parent`\\r\\n\\t\\t\\t\\t\\t\\t&innerRowTpl=`tpl.Wayfinder.row.inner`\\r\\n\\t\\t\\t\\t\\t\\t&rowTpl=`tpl.Wayfinder.row`                    \\r\\n\\t\\t\\t\\t\\t]]\\r\\n\\t\\t\\t\\t<\\/ul>\\r\\n\\t\\t\\t<\\/div>\\r\\n\\t\\t<\\/div>\\r\\n\\t<\\/div>\\r\\n<\\/div>\\r\\n"}',
+        'guid' => 'b5f5af23886de44dd138937a40677a94',
+        'native_key' => 0,
+        'signature' => '4248eaf9876afae199ee3f4338ffa8bc',
+      ),
+      '8c7263152c31de9d922b8af8684031da' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"name":"Counters","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<!-- Javascript code for counting page hits -->\\n<!-- For example - Google analitics -->\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"<!-- Javascript code for counting page hits -->\\n<!-- For example - Google analitics -->\\n"}',
+        'guid' => 'c95a0713fdc6cdfeabff75bf14a9ad7e',
+        'native_key' => 0,
+        'signature' => '7abfbb597e85795394603f01a518ef1c',
+      ),
+      '94a15ff367757da058bd91a9c5afe9a4' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"name":"tpl.Wayfinder.row","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<li [[+wf.classes]]>\\n\\t<a href=\\"[[+wf.link]]\\" [[+wf.attributes]]>[[+wf.linktext]]<\\/a>\\n\\t[[+wf.wrapper]]\\n<\\/li>\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"<li [[+wf.classes]]>\\n\\t<a href=\\"[[+wf.link]]\\" [[+wf.attributes]]>[[+wf.linktext]]<\\/a>\\n\\t[[+wf.wrapper]]\\n<\\/li>\\n"}',
+        'guid' => 'eca02daf04fd2bfa50fa967b688a63d0',
+        'native_key' => 0,
+        'signature' => '734f72a0a7ffbf29682b47364c96d13e',
+      ),
+      '435b95f0638717c6922a2db4a2914f1f' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"name":"Content.list","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<div id=\\"content\\" class=\\"main\\">\\r\\n\\t[[*id:isnot=`[[++site_start]]`:then=`<h1>[[*longtitle:default=`[[*pagetitle]]`]]<\\/h1>`]]\\r\\n\\t[[*content]]\\r\\n\\t[[!getPage?\\r\\n\\t\\t&parents=`[[*id]]`\\r\\n\\t\\t&element=`getResources`\\r\\n\\t\\t&tpl=`tpl.getResources.row`\\r\\n\\t\\t&limit=`5`\\r\\n\\t\\t&pageActiveTpl=`<li[[+activeClasses:default=` class=\\"active\\"`]]><a[[+activeClasses:default=` class=\\"active\\"`]][[+title]] href=\\"[[+href]]\\">[[+pageNo]]<\\/a><\\/li>`\\r\\n\\t]]\\r\\n\\r\\n\\t<div class=\\"pagination\\">\\r\\n\\t\\t<ul>\\r\\n\\t\\t\\t[[!+page.nav]]\\r\\n\\t\\t<\\/ul>\\r\\n\\t<\\/div>\\r\\n<\\/div>\\r\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"<div id=\\"content\\" class=\\"main\\">\\r\\n\\t[[*id:isnot=`[[++site_start]]`:then=`<h1>[[*longtitle:default=`[[*pagetitle]]`]]<\\/h1>`]]\\r\\n\\t[[*content]]\\r\\n\\t[[!getPage?\\r\\n\\t\\t&parents=`[[*id]]`\\r\\n\\t\\t&element=`getResources`\\r\\n\\t\\t&tpl=`tpl.getResources.row`\\r\\n\\t\\t&limit=`5`\\r\\n\\t\\t&pageActiveTpl=`<li[[+activeClasses:default=` class=\\"active\\"`]]><a[[+activeClasses:default=` class=\\"active\\"`]][[+title]] href=\\"[[+href]]\\">[[+pageNo]]<\\/a><\\/li>`\\r\\n\\t]]\\r\\n\\r\\n\\t<div class=\\"pagination\\">\\r\\n\\t\\t<ul>\\r\\n\\t\\t\\t[[!+page.nav]]\\r\\n\\t\\t<\\/ul>\\r\\n\\t<\\/div>\\r\\n<\\/div>\\r\\n"}',
+        'guid' => '125c3e62afe9ab1003f1bf7fa85bba6b',
+        'native_key' => 0,
+        'signature' => '95b8c1c5c9070e16510fd2eac2f5663e',
+      ),
+      'c3bd43938691ee1f9a5142968f7ce79e' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"name":"tpl.getResources.row","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<div>\\n\\t<h3><a href=\\"[[~[[+id]]]]\\">[[+longtitle:default=[[+pagetitle]]`]]<\\/a><\\/h3>\\n\\t[[+introtext:notempty=`<p>[[+introtext]]<\\/p>`]]\\n\\t<p>[[+publishedon:strtotime:date=`%d.%m.%Y`]]<\\/p>\\n<\\/div>\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"<div>\\n\\t<h3><a href=\\"[[~[[+id]]]]\\">[[+longtitle:default=[[+pagetitle]]`]]<\\/a><\\/h3>\\n\\t[[+introtext:notempty=`<p>[[+introtext]]<\\/p>`]]\\n\\t<p>[[+publishedon:strtotime:date=`%d.%m.%Y`]]<\\/p>\\n<\\/div>\\n"}',
+        'guid' => 'da31f5bb26e3001d1cdc5e4f76e14874',
+        'native_key' => 0,
+        'signature' => 'd9d7860ead7734916ccad857f37c56b0',
+      ),
+      '75bb07f95ad5f69fa0cc2072408e760f' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"name":"tpl.Wayfinder.row.inner","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<li [[+wf.classes]]>\\n\\t<a href=\\"[[+wf.link]]\\" [[+wf.attributes]]>[[+wf.linktext]]<\\/a>\\n\\t[[+wf.wrapper]]\\n<\\/li>\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"<li [[+wf.classes]]>\\n\\t<a href=\\"[[+wf.link]]\\" [[+wf.attributes]]>[[+wf.linktext]]<\\/a>\\n\\t[[+wf.wrapper]]\\n<\\/li>\\n"}',
+        'guid' => '9a27d37813a385db9ae99d172fe3104c',
+        'native_key' => 0,
+        'signature' => 'd341e1680233c2c43484e5f12cc27adb',
+      ),
+      '02d54ff8bc25ba92bb3c23c32c283093' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"name":"tpl.Wayfinder.outer","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"[[+wf.wrapper]]\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"[[+wf.wrapper]]\\n"}',
+        'guid' => 'd567143795f54113646349de3dccd107',
+        'native_key' => 0,
+        'signature' => '5efa718cdc9da81b50fb9c43f3c5a5bf',
+      ),
+      '277770ea4c9b7ed44da4783f4f7ca624' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"name":"tpl.Wayfinder.row.parent","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<li class=\\"[[+wf.classnames]] dropdown\\">\\n\\t<a href=\\"#\\" title=\\"[[+wf.title]]\\" class=\\"dropdown-toggle\\" data-toggle=\\"dropdown\\" [[+wf.attributes]]>\\n\\t\\t[[+wf.linktext]] \\n\\t\\t<b class=\\"caret\\"><\\/b>\\n\\t<\\/a>\\n\\t<ul class=\\"dropdown-menu\\">\\n\\t\\t[[+wf.wrapper]]\\n\\t<\\/ul>\\n<\\/li>\\n","locked":0,"properties":null,"static":0,"static_file":"","content":"<li class=\\"[[+wf.classnames]] dropdown\\">\\n\\t<a href=\\"#\\" title=\\"[[+wf.title]]\\" class=\\"dropdown-toggle\\" data-toggle=\\"dropdown\\" [[+wf.attributes]]>\\n\\t\\t[[+wf.linktext]] \\n\\t\\t<b class=\\"caret\\"><\\/b>\\n\\t<\\/a>\\n\\t<ul class=\\"dropdown-menu\\">\\n\\t\\t[[+wf.wrapper]]\\n\\t<\\/ul>\\n<\\/li>\\n"}',
+        'guid' => '0d20a3f0968012f1e113f09ba24f9cfe',
+        'native_key' => 0,
+        'signature' => '1a25722db735b7725ec4ae668fab3bbe',
+      ),
+    ),
+    'Templates' => 
+    array (
+      '011167cdaad6f8b136ace1b523bf19bd' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'templatename',
+        'class' => 'modTemplate',
+        'object' => '{"id":0,"source":0,"property_preprocess":0,"templatename":"Bootstrap","description":"","editor_type":0,"category":0,"icon":"","template_type":0,"content":"<!DOCTYPE html>\\n<html>\\n\\t<head>\\n\\t\\t[[$Head]]\\n\\t<\\/head>\\n\\t<body>\\n\\t\\t[[$Navbar]]\\n\\t\\t<div class=\\"container\\">\\n\\t\\t\\t[[[[*id:isnot=`[[++site_start]]`:then=`$Breadcrumb`:else=`--`]]]]\\n\\t\\t\\t[[$Content]]\\n\\t\\t\\t[[$Footer]]\\n\\t\\t<\\/div>\\n\\t<\\/body>\\n<\\/html>\\n","locked":0,"properties":null,"static":0,"static_file":""}',
+        'guid' => '11b34eb0cfe91da4ee18ca1cf713b09b',
+        'native_key' => 0,
+        'signature' => '57a9c776ca7c7866db63f9a106c529be',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Children' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'category',
+      'related_objects' => true,
+      'related_object_attributes' => 
+      array (
+        'Templates' => 
+        array (
+          'preserve_keys' => false,
+          'update_object' => false,
+          'unique_key' => 'templatename',
+        ),
+        'Chunks' => 
+        array (
+          'preserve_keys' => false,
+          'update_object' => false,
+          'unique_key' => 'name',
+        ),
+      ),
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => false,
+      'unique_key' => 'templatename',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => false,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'themebootstrap',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"themebootstrap-1.3.1-pl\\/modCategory\\/181116db0337d7e9299e86f79a988e8e\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"themebootstrap"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'e4416754497d11cf4e130e713386a180',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '181116db0337d7e9299e86f79a988e8e',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"Theme.Bootstrap"}',
+);

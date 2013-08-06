@@ -48,13 +48,15 @@
 }
 
 .owl-theme .owl-controlls .owl-page.active span,
-.owl-theme .owl-controlls.clickable .owl-page:hover span{
+.owl-theme .owl-controlls.clickable .owl-page.active:hover span{
   color: #ffffff;
   background: #fd9527;
 }
+.owl-theme .owl-controlls.clickable .owl-page:hover span{
+  color: #fd9527;
+}
 
-.owl-theme .owl-controlls .owl-page.active span.owl-numbers,
-.owl-theme .owl-controlls.clickable .owl-page:hover span.owl-numbers {
+.owl-theme .owl-controlls .owl-page.active span.owl-numbers {
   padding-bottom: 9px;
 }
 

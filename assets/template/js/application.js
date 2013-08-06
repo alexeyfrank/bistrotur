@@ -15,10 +15,11 @@ $(function() {
 
   $('.tours .tour').hover(function() {
     var height = $(this).height();
+    var width = $(this).width();
     var fg = $(this).find('.foreground');
     var abs = $(this).find('.abs');
     abs.hide();
-    fg.hide().height(height).show();
+    fg.hide().height(height).width(width).show();
   }, function() {
     var abs = $(this).find('.abs');
     var fg = $(this).find('.foreground');

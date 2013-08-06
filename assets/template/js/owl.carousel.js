@@ -539,7 +539,6 @@ if ( typeof Object.create !== 'function' ) {
 					base.next(true);
 				}
 			},base.options.autoPlay)	
-       $('.slide:eq(0)').find('.subitems').show();
 
 		},
 

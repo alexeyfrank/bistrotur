@@ -9,6 +9,7 @@ $(function() {
   });
   var owl = $('.slider').data('owlCarousel');
 
+  $('.slide:eq(0)').find('.subitems').show();
   owl.play();
 
 

@@ -60,5 +60,8 @@
   width: 100%;
   height: 100%;
   cursor: pointer;
-  background: url('/assets/template/images/tour-foreground.png');
+}
+
+.tours .tour .foreground img {
+  width: 100%;
 }

@@ -1,11 +1,14 @@
 .slider {
-  margin-top: 85px;
+  margin-top: 35px;
   position:relative;
 }
 
 .slide {
+  position: relative;
   width: 822px;
-  height: 400px;
+  height: 440px;
+  overflow-y: visible;
+  overflow-x: visible;
 }
 
 .owl-pagination {
@@ -15,14 +18,55 @@
 }
 
 .slider .slide .details {
+  position:absolute;
+  bottom: 0px;
+  margin-bottom: 24px;
+  left: 150px;
   display:block;
-  height: 35px;
-  width: 160px;
-  margin-top: -26px;
-  background: #fd9527;
+  height: 34px;
+  width: 224px;
+  background: url('/assets/template/images/details.jpg') 0 0 no-repeat;
   color: #ffffff;
-  margin-left: 140px;
   text-align: center;
   line-height: 35px;
   z-index: 1000;
+}
+
+.slider .slide .subitems {
+  display: none;
+}
+
+.slider .slide .subitems .title {
+  font-size: 16px;
+  text-align: center;
+  color: #fe0202;
+  font-family: Verdana;
+}
+
+.slider .slide .info {
+  width: 416px;
+  height: 162px;
+  background: #ffffff;
+  position: absolute;
+  right: -15px;
+  bottom: -15px;
+  z-index: 1000;
+  padding: 10px;
+}
+
+
+.slider .slide .info .stars {
+  width: 96px;
+  height: 18px;
+}
+
+.slider .slide .info .text {
+  margin-top: 5px;
+  font-size: 12px;
+  font-family: Verdana;
+  color: #505050;
+}
+
+.slider .slide .info .text p {
+  margin: 1px;
 }

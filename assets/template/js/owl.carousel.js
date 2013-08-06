@@ -167,21 +167,21 @@ if ( typeof Object.create !== 'function' ) {
 		update : function(){
 			var base = this;
 
-			if(base.support3d === true){
+			/* if(base.support3d === true){
 				if(base.positionsInArray[base.currentSlide] > base.maximumPixels){
 					base.transition3d(base.positionsInArray[base.currentSlide]);
 				} else {
 					base.transition3d(0);
 					base.currentSlide = 0 //in array
 				}
-			} else{
+			} else{ */
 				if(base.positionsInArray[base.currentSlide] > base.maximumPixels){
 					base.css2slide(base.positionsInArray[base.currentSlide]);
 				} else {
 					base.css2slide(0);
 					base.currentSlide = 0 //in array
 				}
-			}
+			//}
 			if(base.options.autoPlay !== false){
 				base.play();
 			}
@@ -465,7 +465,7 @@ if ( typeof Object.create !== 'function' ) {
 
 			var goToPixel = base.positionsInArray[position];
 
-			if(base.support3d === true){
+	/*		if(base.support3d === true){
 				base.isCss3Finish = false;
 
 				if(pagination === true){
@@ -487,7 +487,7 @@ if ( typeof Object.create !== 'function' ) {
     				}, base.options.slideSpeed);
 				}
 				base.transition3d(goToPixel);
-			} else {
+			} else { */
 				if(pagination === true){
 					base.css2slide(goToPixel, base.options.paginationSpeed);
 				} else if(pagination === "goToFirst" ){
@@ -495,7 +495,7 @@ if ( typeof Object.create !== 'function' ) {
 				} else {
 					base.css2slide(goToPixel, base.options.slideSpeed);
 				}
-			}
+			//}
 
 			if(base.options.pagination === true){
 				base.checkPagination()
@@ -519,7 +519,7 @@ if ( typeof Object.create !== 'function' ) {
 			if(base.options.autoPlay === false){
 				return false;
 			} else if(base.options.autoPlay === true){
-				base.options.autoPlay = 5000;
+				base.options.autoPlay = 6000;
 			}
 			clearInterval(base.myInterval);
 			base.myInterval = setInterval(function(){
@@ -539,6 +539,8 @@ if ( typeof Object.create !== 'function' ) {
 					base.next(true);
 				}
 			},base.options.autoPlay)	
+       $('.slide:eq(0)').find('.subitems').show();
+
 		},
 
 		swapTransitionSpeed : function(action){
@@ -592,14 +594,22 @@ if ( typeof Object.create !== 'function' ) {
 			var base = this;
 
 			base.isCssFinish = false;
-			base.owlWrapper.stop(true,true).animate({
-				"left" : value
-			}, {
-				duration : speed || base.options.slideSpeed ,
-			    complete : function(){
-			    	base.isCssFinish = true;
-				}
-			})
+      $('.slider .subitems').fadeOut('fast', function() {
+        base.owlWrapper.animate({
+          "left" : value
+        }, {
+          duration : speed || base.options.slideSpeed ,
+          complete : function(){
+            base.owlWrapper.stop(true, true);
+            var slideNum = Math.abs(value / 822);
+            console.log(slideNum);
+            var slide = $('.slide').get(slideNum);
+            $(slide).find('.subitems').fadeIn('fast', function() {
+              base.isCssFinish = true;
+            });
+          }
+        })
+      });
 		},
 
 		support3d : function(){
@@ -715,11 +725,7 @@ if ( typeof Object.create !== 'function' ) {
             	}
             	//Calculate min and max
                 base.newX = Math.max(Math.min( base.newX, minSwipe() ), maxSwipe() );
-                if(base.support3d === true){
-                	base.transition3d(base.newX);
-                } else {
                 	base.css2move(base.newX);
-                }
 
             };
 
@@ -822,7 +828,7 @@ if ( typeof Object.create !== 'function' ) {
     };
 
     $.fn.owlCarousel.options = {
-    	slideSpeed : 200,
+    	slideSpeed : 800,
     	paginationSpeed : 800,
 
     	autoPlay : false,

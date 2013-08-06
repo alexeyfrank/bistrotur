@@ -17,20 +17,24 @@
 	display: none;
 	position: relative;
 	width: 100%;
+  overflow-y: visible;
 }
 .owl-carousel .owl-wrapper{
 	display: none;
 	position: relative;
+  overflow-y: visible;
 	-webkit-transform: translate3d(0px, 0px, 0px);
 	-webkit-perspective: 1000;
 }
 .owl-carousel .owl-wrapper-outer{
-	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: visible;
 	position: relative;
 	width: 100%;
 }
 .owl-carousel .owl-item{
 	float: left;
+  overflow-y: visible;
 }
 .owl-controlls .owl-page,
 .owl-controlls .owl-buttons div{
@@ -53,7 +57,5 @@
 /* fix */
 .owl-carousel  .owl-wrapper,
 .owl-carousel  .owl-item{
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility:    hidden;
-	-ms-backface-visibility:     hidden;
+  overflow-y: visible;
 }

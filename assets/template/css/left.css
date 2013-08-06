@@ -22,7 +22,6 @@
   line-height: 40px;
   font-family: 'Verdana';
   font-size: 16px;
-  font-weight: bold;
   color: #8a8989;
 }
 
@@ -31,10 +30,12 @@
 .left-menu ul li.current a {
   text-decoration: none;
   background-color: #fd9527;
+  font-weight: bold;
   color: #ffffff;
 }
 
 .left-menu ul li a:hover {
+  text-decoration: none;
   color: #fd9527;
 }
 

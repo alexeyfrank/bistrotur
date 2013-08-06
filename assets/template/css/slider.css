@@ -9,8 +9,12 @@
   height: 440px;
   overflow-y: visible;
   overflow-x: visible;
+
 }
 
+.owl-wrapper-outer {
+  height: 460px;
+}
 .owl-pagination {
   position:absolute;
   top: -12px; 

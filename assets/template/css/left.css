@@ -27,11 +27,15 @@
 }
 
 .left-menu ul li.active a,
-.left-menu ul li a:hover,
+.left-menu ul li.active a:hover,
 .left-menu ul li.current a {
   text-decoration: none;
   background-color: #fd9527;
   color: #ffffff;
+}
+
+.left-menu ul li a:hover {
+  color: #fd9527;
 }
 
 

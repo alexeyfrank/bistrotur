@@ -12,12 +12,12 @@ html, body {
 .left-container {
   margin-left: 0;
   width: 20%;
-  border-right: 3px solid gray;
   height: 100%;
   box-sizing: border-box;
 }
 
 .right-container {
+  border-left: 5px double #e2e2e2;
   box-sizing: border-box;
   width: 80%;
   margin-left: 0;
@@ -81,3 +81,11 @@ html, body {
 }
 .star:before { content: '\e800'; } /* '' */
 .star.orange { color: #fd9527;}
+
+
+
+
+footer {
+  background: #292929;
+  padding: 5px 15px;
+}

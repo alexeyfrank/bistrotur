@@ -82,10 +82,3 @@ html, body {
 .star:before { content: '\e800'; } /* '' */
 .star.orange { color: #fd9527;}
 
-
-
-
-footer {
-  background: #292929;
-  padding: 5px 15px;
-}

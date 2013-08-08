@@ -1,0 +1,64 @@
+footer {
+  background: #292929;
+  height: 72px;
+  padding-left: 20px;
+}
+
+footer .info {
+  font-family: Verdana;
+  font-size: 13px;
+  color: #595959;
+  font-style: italic;
+  width: 40%;
+  float: left;
+}
+
+footer .info p {
+  margin: 1px;
+}
+
+footer .info .phone {
+  color: #848484;
+  font-weight: bold;
+  font-style: initial;
+}
+
+footer .menu {
+  height: 100%;
+  width: 35%;
+  background: #242424;
+  margin-left: 40%;
+}
+
+footer .menu ul {
+  float: right;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+footer .menu li {
+  float: left;
+}
+
+footer .menu a {
+  color: #bababa;
+  font-family: Verdana;
+  font-size: 12px;
+  margin: 5px 5px;
+  padding: 5px 10px;
+}
+
+footer .menu .nav li.active a,
+footer .menu .nav li:hover a{
+  background: #242424;
+  border: none;
+  text-decoration: underline;
+}
+
+
+footer .copyright {
+  padding-top: 40px;
+  margin-left: 170px;
+  color: #4b4b4b;
+  font-family: Verdana;
+  font-size: 12px;
+}

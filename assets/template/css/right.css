@@ -4,9 +4,10 @@
 }
 
 .top-menu nav {
-  width: 640px;
+  max-width: 580px;
   height: 60px;
   margin-left: 20px;
+  text-transform: uppercase;
 }
 
 .top-menu nav .brand {

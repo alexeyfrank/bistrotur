@@ -48,11 +48,12 @@
 
 .contacts .phone {
   font-size: 29px;
-  font-family: 'Arial Black';
+  font-family: Verdana;
+  font-weight: bold;
   color: #fd9527;
 }
 
-.contacts .phone i {
+.contacts .phone abbr {
   font-size: 20px;
   color: #9b9a9a;
 }

@@ -19,7 +19,8 @@ $category = $scriptProperties['category'];
   $offset = ceil($total / 3);
 
   $ids = array_map(function($value) {
-    return $value->toArray()['id'];
+    $arr = $value->toArray();
+    return $arr['id'];
   }, $collection);
 
   $chunks = array_chunk($ids, $offset);

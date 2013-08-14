@@ -27,6 +27,8 @@ $(function() {
     fg.hide();
   });
 
+  //$('.modal').modal();
+
 
   $('.tours .foreground').click(function() {
     var url = $(this).data('href');

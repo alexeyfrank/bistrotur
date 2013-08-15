@@ -30,10 +30,12 @@ $(function() {
   //$('.modal').modal();
 
 
-  $('.tours .foreground').click(function() {
+  $('.tours .foreground, .details').click(function(e) {
     var url = $(this).data('href');
     $.get(url, {}, function(response) {
       $('.modal').html(response).modal();
     }, "html");
+
+    e.preventDefault();
   });
 });

@@ -17,7 +17,9 @@
           [[$Slider]]
         </div>
 
-        [[$Tours? &category=`all`]]
+        <div class="tours">
+          [[ColumnsForCategory? &category=`all` ]]
+        </div>
 
         [[$Footer]]
       </div>

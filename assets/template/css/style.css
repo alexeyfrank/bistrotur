@@ -94,6 +94,17 @@ html, body {
   color: #fd9527;
 }
 
+.content h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fd9527;
+}
+
 .content p {
   font-size: 13px;
+}
+
+
+.article {
+  border-bottom: 1px dashed gray;
 }

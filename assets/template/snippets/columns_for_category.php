@@ -2,15 +2,19 @@
 $category = $scriptProperties['category'];
   $total = 0;
   $filter = array(
-    //'Resource.template' => 4,
+    //'modResource.template' => 4,
     'published' => '1'
   );
 
+  $parent = null;
+
   if ($category == 'all') {
-    $filter["modResource.parent:IN"] = array(7,8,9,12);
+    $parent = array(7, 8, 9, 12);
   } else {
-    $filter["parent"] = $category;
+    $parent = array($category);
   }
+
+  $filter["modResource.parent:IN"] = $parent;
   $query = $modx->newQuery('modResource', $filter);
   $query->select('id');
   $collection = $modx->getCollection('modResource', $query);
@@ -25,11 +29,18 @@ $category = $scriptProperties['category'];
 
   $chunks = array_chunk($ids, $offset);
 
-  $result = '<div class="column">';
+  $result = '';
 
   foreach ($chunks as $chunk) {
-    $result .= $modx->getChunk('Column', array('ids' => implode(', ', $chunk)));
+    $result .= '<div class="column">';
+    $result .= $modx->runSnippet('getResources', array(
+      'published' => '1',
+      //'parents' => implode(',', $parent),
+      'resources' => implode(',', $chunk),
+      'includeTVs' => '1',
+      'tpl' => 'Tour'
+    ));
+    $result .= '</div>';
   }
 
-  $result .= '</div>';
   return $result;

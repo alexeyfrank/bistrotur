@@ -2,6 +2,7 @@ $(function() {
 
   $('.slider').owlCarousel({
     items: 1,
+    itemsDesktop: [1024, 1],
     navigation: true,
     paginationNumbers: true,
     autoPlay: true,

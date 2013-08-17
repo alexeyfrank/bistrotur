@@ -255,7 +255,12 @@ if ( typeof Object.create !== 'function' ) {
 
 		calculateWidth : function(){
 			var base = this;
-			base.itemWidth = 822; //Math.round(base.$elem.width()/base.options.items)
+      var width = $(window).width();
+      if (width < 1100) {
+        base.itemWidth = 650;
+      } else {
+        base.itemWidth = 822; //Math.round(base.$elem.width()/base.options.items)
+      }
 		},
 
 		max : function(){
@@ -600,7 +605,7 @@ if ( typeof Object.create !== 'function' ) {
           duration : speed || base.options.slideSpeed ,
           complete : function(){
             base.owlWrapper.stop(true, true);
-            var slideNum = Math.abs(value / 822);
+            var slideNum = Math.abs(value / base.itemWidth);
             console.log(slideNum);
             var slide = $('.slide').get(slideNum);
             $(slide).find('.subitems').fadeIn('fast', function() {

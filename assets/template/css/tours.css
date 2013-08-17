@@ -18,6 +18,7 @@
 
 .tours .tour img {
   width: 100%;
+  min-height: 255px;
 }
 
 

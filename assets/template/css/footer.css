@@ -9,7 +9,7 @@ footer .info {
   font-size: 13px;
   color: #595959;
   font-style: italic;
-  width: 40%;
+  width: 36%;
   float: left;
 }
 
@@ -25,9 +25,9 @@ footer .info .phone {
 
 footer .menu {
   height: 100%;
-  width: 45%;
+  width: 64%;
   background: #242424;
-  margin-left: 40%;
+  margin-left: 36%;
 }
 
 footer .menu ul {
@@ -56,9 +56,10 @@ footer .menu .nav li:hover a{
 
 
 footer .copyright {
+  text-align: right;
   padding-top: 40px;
-  margin-left: 200px;
   color: #4b4b4b;
+  margin-right: 15px;
   font-family: Verdana;
   font-size: 12px;
 }

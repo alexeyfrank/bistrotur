@@ -11,7 +11,7 @@ html, body {
 
 .left-container {
   margin-left: 0;
-  width: 23%;
+  width: 20%;
   height: 100%;
   box-sizing: border-box;
 }
@@ -19,7 +19,7 @@ html, body {
 .right-container {
   border-left: 5px double #e2e2e2;
   box-sizing: border-box;
-  width: 76.2%;
+  width: 79.2%;
   margin-left: 0;
   min-height: 100%;
 }

@@ -25,7 +25,7 @@ footer .info .phone {
 
 footer .menu {
   height: 100%;
-  width: 35%;
+  width: 45%;
   background: #242424;
   margin-left: 40%;
 }
@@ -57,7 +57,7 @@ footer .menu .nav li:hover a{
 
 footer .copyright {
   padding-top: 40px;
-  margin-left: 170px;
+  margin-left: 200px;
   color: #4b4b4b;
   font-family: Verdana;
   font-size: 12px;

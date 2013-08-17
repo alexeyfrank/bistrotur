@@ -4,7 +4,7 @@
 }
 
 .top-menu nav {
-  max-width: 580px;
+  max-width: 730px;
   height: 60px;
   margin-left: 20px;
   text-transform: uppercase;
@@ -23,7 +23,7 @@
 
 .top-menu nav .navbar .nav>li>a {
   padding: 20px 20px;
-  font-size: 16px;
+  font-size: 14px;
   background: white;
   box-shadow: none;
 }

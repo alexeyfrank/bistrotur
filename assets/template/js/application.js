@@ -11,7 +11,9 @@ $(function() {
   var owl = $('.slider').data('owlCarousel');
 
   $('.slide:eq(0)').find('.subitems').show();
-  owl.play();
+  if (owl) {
+    owl.play();
+  }
 
 
   $('.tours .tour').hover(function() {

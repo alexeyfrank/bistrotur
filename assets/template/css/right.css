@@ -1,6 +1,40 @@
 .right-container .header {
-  /*height: 560px;*/
   background: url('/assets/template/images/header-bg.jpg');
+  position:relative;
+}
+
+.right-container .header.content-bg,
+.right-container .header.category-bg-7,
+.right-container .header.category-bg-9,
+.right-container .header.category-bg-8,
+.right-container .header.category-bg-10,
+.right-container .header.category-bg-11,
+.right-container .header.category-bg-12,
+.right-container .header.category-bg-39
+{
+  height: 335px;
+}
+.right-container .header.content-bg { background: url('/assets/template/images/head_bg/content.jpg'); }
+.right-container .header.category-bg-7 { background: url('/assets/template/images/head_bg/hot.jpg'); }
+.right-container .header.category-bg-9 { background: url('/assets/template/images/head_bg/eks.jpg'); }
+.right-container .header.category-bg-8 { background: url('/assets/template/images/head_bg/eks.jpg'); }
+.right-container .header.category-bg-10 { background: url('/assets/template/images/head_bg/event.jpg'); }
+.right-container .header.category-bg-11 { background: url('/assets/template/images/head_bg/bus.jpg'); }
+.right-container .header.category-bg-12 { background: url('/assets/template/images/head_bg/event.jpg'); }
+.right-container .header.category-bg-39 { background: url('/assets/template/images/head_bg/hot.jpg'); }
+
+
+.right-container .header h1 {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-size: 28px;
+  font-family: Verdana;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  text-shadow: 2px 2px 1px #362f36;
+  filter: dropshadow(color=#362f36, offx=2, offy=2);
 }
 
 .top-menu nav {
